@@ -1,0 +1,19 @@
+BYO Scheduling Algorithm:
+For cs, I have implemented a non-preemptive Shortest Job First algorithm, 
+which prioritizes the shortest job in the process queue. This algorithm 
+can almost always provide a faster average turnaround time, and a higher 
+throughput, because more jobs will get executed in the same period of time.
+However, it can perform worse when a processes with short job times keeps 
+coming before the longer jobs ever gets executed, resulting in process 
+starvation.
+
+BYO Memory Management Algorithm:
+I have chosen Most Recently Used (MRU) algorithm, which chooses to evict 
+memory that has most recently been used. The algorithm usually performs 
+better than the baselines when the same processes are not called multiple 
+times in a short period of time, because this algorithm assumes that 
+processes are not likely to be executed multiple times in a short period of
+time, and that older items are more likely to be accessed. However, this 
+algorithm might perform worse when a few process are called repeatedly in a
+short amount of time, or when paired with a preemptive scheduling 
+algorithm, such as round robin.
